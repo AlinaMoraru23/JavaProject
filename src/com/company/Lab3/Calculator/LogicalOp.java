@@ -3,6 +3,8 @@ package com.company.Lab3.Calculator;
 import javax.lang.model.element.NestingKind;
 import javax.sound.midi.Soundbank;
 
+
+
 public class LogicalOp {
 
     //ex 3 - biggest number
@@ -65,21 +67,21 @@ public class LogicalOp {
 // ex 7
 
     public String compare7(int no1) {
-        if (no1>3 && no1!=4) {
-        return "The number is greater than 3 and not equal to 4";
-        }else if (no1==4) {
-        return "The number is equal to 4";
-        }else{
-        return "The number is lower than 3";
+        if (no1 > 3 && no1 != 4) {
+            return "The number is greater than 3 and not equal to 4";
+        } else if (no1 == 4) {
+            return "The number is equal to 4";
+        } else {
+            return "The number is lower than 3";
         }
 
     }
 
-// ex 8
+    // ex 8
     public String ex8(int no1) {
         int number = no1;
         String returnNumber;
-        switch (number){
+        switch (number) {
             case 1:
                 returnNumber = "the number is 1";
                 break;
@@ -94,6 +96,39 @@ public class LogicalOp {
 
         }
         return returnNumber;
+    }
+
+// ex 9
+
+    public boolean isNumberEven(int number) {
+        if (number % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+//ex 10
+
+    public boolean isEligibleToVote (int age) {
+        if (age >= 18) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+//ex 11
+
+
+    public int biggestNumber (int no1, int no2, int no3) {
+        if (no1>=no2 && no1>=no3) {
+            return no1;
+        }else if (no2>=no1 && no2>=no3) {
+            return no2;
+        }else{
+            return no3;
+        }
     }
 
 

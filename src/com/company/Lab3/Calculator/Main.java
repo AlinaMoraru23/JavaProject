@@ -1,5 +1,7 @@
 package com.company.Lab3.Calculator;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -46,6 +48,39 @@ public class Main {
 // ex 8
         String ex8 = operations.ex8(1);
         System.out.println(ex8);
+// ex 9
+        Boolean isNumberEven = operations.isNumberEven(7);
+        System.out.println(isNumberEven);
+
+// ex 10
+        Boolean isEligibleToVote = operations.isEligibleToVote(18);
+        System.out.println(isEligibleToVote);
+
+// ex 11
+        int biggestNumber = operations.biggestNumber(15,19,6);
+        System.out.println((biggestNumber));
+
+
+
+        Scanner scan = new Scanner(System.in);
+
+// ex 11 - curs (Se cisteste un numar, sa se afiseze valoarea numarului citit.)
+        System.out.println("enter number");
+        int number = scan.nextInt();
+        System.out.println("The number is "+ number);
+
+// ex 12 - curs (Se citeste un numar, sa se afiseze patratul acestuia (x^2).)
+        System.out.println("enter number");
+        int number1 = scan.nextInt();
+        int sqValue = number1*number1;
+        System.out.println("The square value is " + sqValue);
+
+// ex 13 - curs (Se citesc doua numere, sa se afiseze rezultatul impartirii celor doua numere.)
+        System.out.println("The 2 numbers are");
+        int number2 = scan.nextInt();
+        int number3 = scan.nextInt();
+        int result = number2/number3;
+        System.out.println("the result is " + result);
 
     }
 }
