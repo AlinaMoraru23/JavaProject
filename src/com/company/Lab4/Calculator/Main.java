@@ -45,5 +45,6 @@ public class Main {
 //ex4
         op.printFromSmallestToLargestF(30,20);
 
+
     }
 }

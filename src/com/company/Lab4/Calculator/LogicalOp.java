@@ -292,4 +292,5 @@ public class LogicalOp {
             System.out.println(i);
         }
     }
+
 }
