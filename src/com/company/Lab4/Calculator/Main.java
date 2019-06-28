@@ -8,6 +8,7 @@ public class Main {
 
         op.printBackwards(10, 5);
         op.printSumAndAverage();
+//WHILE
 //ex1
         op.printTo100(90);
 
@@ -25,5 +26,24 @@ public class Main {
 
 //ex6
         op.printOddNumbers();
+
+
+
+
+//FOR
+
+
+//ex1
+        op.printTo100F(90);
+
+//ex2
+        op.printBackwardsTo100F(0);
+
+//ex3
+        op.printFromXToYF(60,70);
+
+//ex4
+        op.printFromSmallestToLargestF(30,20);
+
     }
 }
