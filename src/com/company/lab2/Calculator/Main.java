@@ -34,7 +34,6 @@ public class Main {
         System.out.println("The distance in meters is " + distM((float) 1150.5) );
 
         //ex 9
-        //System.out.println("The speed is " + speed(15000,1,30,15));
 
         speed(15000,1,30,15);
     }
