@@ -8,7 +8,11 @@ class Cat extends Animal {
 
     //comportamentele clasei
     public void eat() {
-        System.out.println("Eating Purina");
+        System.out.println("Eating cat food");
+    }
+
+    public void sound() {
+        System.out.println("Meaw");
     }
 
     public void drink() {

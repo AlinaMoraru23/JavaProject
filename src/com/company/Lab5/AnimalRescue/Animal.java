@@ -4,7 +4,6 @@ public class Animal {
     //atributele clasei
     private String nameAnimal;
     private float ageAnimal;
-    private String breed;
     private int health;
     private int hunger;
     private int mood;
@@ -66,4 +65,15 @@ public class Animal {
     public String getFavouriteActivity() {
         return favouriteActivity;
     }
+
+//comportamentele clasei
+
+    public void eat() {
+        System.out.println("Food");
+    }
+    public void sound() {
+
+    }
+
+
 }

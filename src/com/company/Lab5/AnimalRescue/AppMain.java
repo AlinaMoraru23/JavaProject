@@ -57,6 +57,9 @@ public class AppMain {
         System.out.println(cat1.getFavouriteActivity());
         System.out.println(cat1.getFavouriteFood());
 
+        cat1.eat();
+        cat1.sound();
+
 //class Doctor
 
         com.company.Lab5.AnimalRescue.Doctor doctor1 = new Doctor();
@@ -66,7 +69,7 @@ public class AppMain {
 
         System.out.println("Doctor " + doctor1.getNameDoc() + ", " + "specialized in " + doctor1.getDomain());
 
-//class Dog - done
+//class Dog
 
         Dog dog1 = new Dog();
 
@@ -86,9 +89,10 @@ public class AppMain {
         System.out.println(dog1.getFavouriteActivity());
         System.out.println(dog1.getFavouriteFood());
 
-        dog1.drink();
+
         dog1.eat();
-        dog1.play();
+        dog1.sound();
+
 
 //class Food
 

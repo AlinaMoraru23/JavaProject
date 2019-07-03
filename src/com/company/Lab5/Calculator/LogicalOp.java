@@ -217,10 +217,10 @@ public class LogicalOp {
 
 //5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
 
-    public void printEvenNumbers(){
-        int i=1;
-        while (i<=100){
-            if (i%2==0){
+    public void printEvenNumbers() {
+        int i = 1;
+        while (i <= 100) {
+            if (i % 2 == 0) {
                 System.out.println(i);
             }
             i++;
@@ -238,23 +238,103 @@ public class LogicalOp {
         }
     }
 
-//Lab 5
 
-//define and write the values of an array ...1->100
+//Tema lab 5
 
 
-    public int [] myArrayToHundred(){
-        int [] myArray = new int [100];
+//2.In clasa LogicalOp, creati o metoda care sa scrie pe un array de 100 de pozitii, valorile de la 1 la 100.
+// Sa se afiseze progresul in consola pe tot parcursul.
 
-        for (int i =1; i<=myArray.length; i++) {
-            myArray[i - 1] = i;
+    public int[] myArrayToHundred() {
+        int[] myArray2 = new int[100];
+
+        for (int i = 1; i <= myArray2.length; i++) {
+            myArray2[i - 1] = i;
         }
-        return myArray;
-}
+        return myArray2;
+    }
 
-//calculate average of an array
+//3.Creati o metoda care primeasca un parametru de tip array de numere intregi gol, si sa il returneze populat cu toate
+// valorile pare de la 1 la 100. Apelati metoda in main() pentru a verifica daca functioneaza. Atentie, metoda returneaza
+// un array, deci acesta va trebui surprins si afisat folosind o bucla.
+
+    public int[] myEvenArrayToHundred() {
+        int[] myArray3 = new int[50];
+
+        for (int i = 1; i <= myArray3.length; i++) {
+            myArray3[i - 1] = i * 2;
+        }
+        return myArray3;
+    }
+
+//4.Creati o metoda care sa primeasca un parametru de tip array de numere, si sa fie populat cu valori.
+// Metoda sa calculeze si sa returneze media numerelor din array.
+
+    public float myArrayAverage(int[] myArray4) {
+
+        float sum = 0;
+        for (int i = 0; i < myArray4.length; i++) {
+            sum += myArray4[i];
+        }
+        return sum / myArray4.length;
+    }
+
+//5.Creati o metoda care sa primeasca un parametru de tip array de string-uri, populat cu valori, si un
+// parametru de tip String. Metoda sa verifice daca valoarea string-ului primit se regaseste in array-ul primit,
+// iar daca da sa returneze true iar daca nu, sa returneze false.
+
+
+    public boolean myArrayCheck(String[] myString, String myValue) {
+        for (String element : myString) {
+            if (element.equals(myValue)) {
+                return true;
+            }
+        }
+        return false;
+
+    }
+
+//6.Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru
+// de tip numar. Metoda sa verifice daca numarul primit se afla in array-ul primit, si daca da, atunci sa returneze
+// pozitia pe care se afla numaru
+
+
+    public int myNumberCheck(int[] myArrayNumbers, int myNumber) {
+
+        int position = -1;
+        for (int i = 0; i < myArrayNumbers.length; i++) {
+            if (myArrayNumbers[i] == myNumber) {
+                position = i;
+                break;
+            }
+        }
+        return position;
+    }
+
+//7. Creati o metoda care sa afiseze urmatoarea grila, folosind un array:
+//----------
+//----------
+//----------
+//----------
+//----------
+//----------
+//----------
+//----------
+//----------
+//----------
+//----------
+
+
+
+//8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar.
+//    Metoda sa verifice daca numarul exista in array, si daca da, sa returneze array-ul primit, fara acel numar.
 
 
 
 
+//9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
+
+
+//10. Creati o metoda care sa primeasca doi parametrii: un array populat cu valori, si un array gol.
+////    Metoda sa copieze toate valorile din primul array, parcurgandu-l, in cel de-al doilea.
 }

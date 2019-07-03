@@ -8,17 +8,12 @@ class Dog extends Animal {
 
     //comportamentele clasei
     public void eat() {
-        System.out.println("Eating Royal Canin");
+        System.out.println("Eating dog food");
     }
+    public void sound() {
+        System.out.println("Bark");
 
-    public void drink() {
-        System.out.println("Drinking water");
     }
-
-    public void play() {
-        System.out.println("Playing with toys");
-    }
-
 
 
 }
