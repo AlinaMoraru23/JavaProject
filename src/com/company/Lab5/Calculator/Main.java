@@ -65,5 +65,6 @@ public class Main {
         int[] myNumbers = {39, 67, 30, 56};
 
         System.out.println(operations.myNumberCheck(myNumbers,6));
+
     }
 }
