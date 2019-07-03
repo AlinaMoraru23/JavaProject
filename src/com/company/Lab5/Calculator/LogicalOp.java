@@ -338,4 +338,5 @@ public class LogicalOp {
 //10. Creati o metoda care sa primeasca doi parametrii: un array populat cu valori, si un array gol.
 ////    Metoda sa copieze toate valorile din primul array, parcurgandu-l, in cel de-al doilea.
 
+
 }
