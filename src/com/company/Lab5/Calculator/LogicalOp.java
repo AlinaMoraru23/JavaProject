@@ -339,5 +339,4 @@ public class LogicalOp {
 ////    Metoda sa copieze toate valorile din primul array, parcurgandu-l, in cel de-al doilea.
 
 
-
 }
