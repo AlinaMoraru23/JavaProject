@@ -328,11 +328,8 @@ public class LogicalOp {
 //----------
 
 
-
 //8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar.
 //    Metoda sa verifice daca numarul exista in array, si daca da, sa returneze array-ul primit, fara acel numar.
-
-
 
 
 //9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
@@ -342,17 +339,11 @@ public class LogicalOp {
 ////    Metoda sa copieze toate valorile din primul array, parcurgandu-l, in cel de-al doilea.
 
 
-
-
-
-
-
-
 //Lab 6
 
-    public List<Integer> getListHundred(){
+    public List<Integer> getListHundred() {
         List<Integer> myList = new ArrayList<>();
-        for (int i = 1; i <= 100; i++){
+        for (int i = 1; i <= 100; i++) {
             myList.add(i);
         }
 
@@ -366,8 +357,8 @@ public class LogicalOp {
 //1. Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand, toate valorile din lista, fiecare pe rand nou.
 
 
-    public void printMyList(List<Integer> myList){
-        for (int i = 0; i<myList.size();i++){
+    public void printMyList(List<Integer> myList) {
+        for (int i = 0; i < myList.size(); i++) {
             System.out.println(myList.get(i));
 
         }
@@ -377,7 +368,7 @@ public class LogicalOp {
 //2. Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru sa fie o lista de numere, si celalalt un numar (real sau intreg).
 // Metoda sa adauge numarul primit ca si parametru la final de lista.
 
-    public void addNumberToList(List<Integer> myList ,int number){
+    public void addNumberToList(List<Integer> myList, int number) {
         myList.add(number);
 
     }
@@ -387,21 +378,21 @@ public class LogicalOp {
 // ca si parametru.
 
 
-    public void printFromInput(List<Integer> myList, int input){
+    public void printFromInput(List<Integer> myList, int input) {
         if (myList.contains(input)) {
             for (int i = myList.indexOf(input); i < myList.size(); i++) {
                 System.out.println(myList.get(i));
             }
 
-        }else{
+        } else {
             System.out.println("The list doesn't contain the given number");
         }
     }
 
 //4. Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand, toate valorile din lista, dar invers(de la capat la inceput).
 
-    public void printMyListBackwards(List<Integer> myList){
-        for (int i = myList.size()-1; i>=0; i--){
+    public void printMyListBackwards(List<Integer> myList) {
+        for (int i = myList.size() - 1; i >= 0; i--) {
             System.out.println(myList.get(i));
         }
     }
@@ -409,36 +400,67 @@ public class LogicalOp {
 //5. Scrieti o metoda Java, care sa primeasca trei parametrii: unul de tip Lista de String-uri, unul de tip intreg, si unul de tip String. Metoda sa adauge
 // parametrul de tip String in lista primita, iar parametrul de tip intreg reprezinta pozitia la care sa fie pus acel String.
 
-    public void addStringToListAtIndex(List<String> myList, int index, String input){
-        myList.add(index,input);
+    public void addStringToListAtIndex(List<String> myList, int index, String input) {
+        myList.add(index, input);
     }
 
 //6. Scrieti o metoda Java, care sa primeasca doi parametrii. Primul dintre ei va fi o Lista, iar metoda sa ia al doilea parametru si sa il adauge pe prima
 // pozitie din lista.
 
-    public void addStringOnFirstPosition (List<String> myList, String input){
-        myList.add(0,input);
+    public void addStringOnFirstPosition(List<String> myList, String input) {
+        myList.add(0, input);
     }
 
 //7. Scrieti o metoda Java care sa primeasca parametru o Lista, si sa afiseze ce valori are lista, si ce pe ce pozitie. (Ex: “Pe pozitia 1 valoare este 4”).
 
-    public void displayIndexAndListElement (List<Integer> myList){
-        for (int i=0; i<myList.size(); i++){
+    public void displayIndexAndListElement(List<Integer> myList) {
+        for (int i = 0; i < myList.size(); i++) {
             System.out.println("Pe pozitia " + i + " valoarea este " + myList.get(i));
         }
     }
 
 //8. Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
 
-    public int returnBiggestNumber (List<Integer> myList){
+    public int returnBiggestNumber(List<Integer> myList) {
         Integer max = 0;
-        for (Integer i: myList){
-            if (max<i){
+        for (Integer i : myList) {
+            if (max < i) {
                 max = i;
             }
         }
         return max;
 
     }
+
+
+// Tema optionala Lab 6
+
+//1. Scrieti o metoda Java care sa schimbe pozitia a doua elemente intr-o Lista,
+
+    public void changePosition(List<String> myList) {
+        String first = myList.get(2);
+        String second = myList.get(4);
+        myList.set(4, first);
+        myList.set(2, second);
+    }
+
+//2. Scrieti o metoda Java care sa primeasca o Lista si sa returneze o alta lista, care sa contina doar numerele pare din lista primita.
+
+    public List<Integer> evenNumbersList(List<Integer> myList) {
+        List<Integer> integerEvenList = new ArrayList<>();
+        for (int i = 0; i < myList.size(); i++) {
+            int element = myList.get(i);
+            if (element % 2 == 0) {
+                integerEvenList.add(element);
+            }
+        }
+        return integerEvenList;
+    }
+
+//3.Scrieti o metoda Java care sa primeasca parametru o Lista nesortata, si sa returneze Lista sortata crescator. Atentie, sortarea sa se faca programatic
+// (adica logica sa fie scrisa de voi), si nu folosit librarie externa, precum Collection.sort().
+
+
+
 
 }

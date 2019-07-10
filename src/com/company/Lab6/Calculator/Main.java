@@ -10,7 +10,7 @@ public class Main {
         LogicalOp operations = new LogicalOp();
 
         List<Integer> integerList = new ArrayList<>();
-        integerList.add(45);
+        integerList.add(44);
         integerList.add(67);
         integerList.add(90);
         integerList.add(137);
@@ -29,22 +29,22 @@ public class Main {
         operations.printMyList(integerList);
 
 //ex 2
-        operations.addNumberToList(integerList,23);
+        operations.addNumberToList(integerList, 23);
         System.out.println(integerList);
 
 //ex 3
-        operations.printFromInput(integerList,90);
+        operations.printFromInput(integerList, 90);
 
 //ex 4
         operations.printMyListBackwards(integerList);
 
 //ex 5
 
-        operations.addStringToListAtIndex(stringList,2,"Sibiu");
+        operations.addStringToListAtIndex(stringList, 2, "Sibiu");
         System.out.println(stringList);
 
 //ex6
-        operations.addStringOnFirstPosition(stringList,"Oradea");
+        operations.addStringOnFirstPosition(stringList, "Oradea");
         System.out.println(stringList);
 
 //ex7
@@ -53,6 +53,20 @@ public class Main {
 
 //ex8
         System.out.println("The max number is: " + operations.returnBiggestNumber(integerList));
-    }
 
+
+//Tema optionala
+
+//ex 1
+
+        operations.changePosition(stringList);
+        System.out.println(stringList);
+
+//ex 2
+        System.out.println(operations.evenNumbersList(integerList));
+
+
+//ex 3
+
+    }
 }
