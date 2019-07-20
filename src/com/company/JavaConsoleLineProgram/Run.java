@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 class Run {
 
+
     private Scanner scan = new Scanner(System.in);
     private Read read = new Read();
     private Login login = new Login();
